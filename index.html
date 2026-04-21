@@ -35,8 +35,6 @@
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
     body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:900;opacity:.35}
-
-    /* ── NAVBAR ── */
     .navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);background:rgba(7,7,9,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:800;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem}
     .nav-logo{display:flex;align-items:center;gap:.6rem}
     .nav-logo img{height:36px;width:36px;object-fit:contain;border-radius:4px}
@@ -47,28 +45,18 @@
     .nav-links a:hover{color:var(--white)}
     .nav-links .nav-cta{background:var(--red);color:#fff;padding:.45rem 1.1rem;border-radius:4px;font-size:.85rem;font-weight:700;transition:background .2s}
     .nav-links .nav-cta:hover{background:#b8162f;color:#fff}
-
-    /* ── HAMBURGER ── */
     .nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px;z-index:810}
     .nav-burger span{display:block;height:2px;background:var(--white);border-radius:2px;transition:transform .3s,opacity .3s}
     .nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
     .nav-burger.open span:nth-child(2){opacity:0}
     .nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-    /* ── MOBILE DRAWER ── */
     .nav-drawer{display:none;position:fixed;top:var(--nav-h);left:0;right:0;background:rgba(10,10,14,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);z-index:799;padding:1.5rem;flex-direction:column;gap:.25rem;transform:translateY(-8px);opacity:0;transition:transform .25s,opacity .25s}
     .nav-drawer.open{display:flex;transform:translateY(0);opacity:1}
     .nav-drawer a{font-size:1.1rem;font-weight:600;color:var(--muted);padding:.85rem 1rem;border-radius:6px;transition:background .15s,color .15s;border:1px solid transparent}
     .nav-drawer a:hover{background:var(--card);color:var(--white);border-color:var(--border)}
     .nav-drawer .nav-cta{background:var(--red);color:#fff;border-color:var(--red);text-align:center;margin-top:.5rem}
     .nav-drawer .nav-cta:hover{background:#b8162f}
-
-    @media(max-width:700px){
-      .nav-links{display:none}
-      .nav-burger{display:flex}
-    }
-
-    /* ── HERO ── */
+    @media(max-width:700px){.nav-links{display:none}.nav-burger{display:flex}}
     .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(var(--nav-h) + 4rem) 1.5rem 4rem;overflow:hidden}
     .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(220,30,60,.12) 0%,transparent 70%);pointer-events:none}
     .hero-eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--red);margin-bottom:1.25rem;opacity:0;animation:fadeUp .6s .2s forwards}
@@ -84,15 +72,11 @@
     .status-bar{margin-top:3rem;display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--muted);opacity:0;animation:fadeUp .7s .8s forwards}
     .dot-green{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse-green 2s infinite}
     @keyframes pulse-green{0%,100%{box-shadow:0 0 6px var(--green)}50%{box-shadow:0 0 16px var(--green)}}
-
-    /* ── SECTIONS ── */
     .section{max-width:1100px;margin:0 auto;padding:5rem 1.5rem}
     .section-label{font-size:.7rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem}
     .section-title{font-family:var(--font-display);font-size:clamp(2.2rem,6vw,5rem);line-height:.95;text-transform:uppercase;color:var(--white);margin-bottom:1.5rem}
     .section-body{font-size:1.05rem;color:#8888a0;max-width:680px;line-height:1.75}
     .divider{height:1px;background:var(--border);max-width:1100px;margin:0 auto}
-
-    /* ── FEATURES ── */
     .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:3rem}
     .feature-card{background:var(--card);padding:2rem;transition:background .2s}
     .feature-card:hover{background:#18181f}
@@ -100,15 +84,11 @@
     .feature-card h3{font-family:var(--font-display);font-size:1.5rem;letter-spacing:.04em;text-transform:uppercase;color:var(--white);margin-bottom:.5rem}
     .feature-card p{font-size:.9rem;color:var(--muted);line-height:1.65}
     .feature-card p strong{color:#c0c0cc}
-
-    /* ── USE CASES ── */
     .use-cases{margin-top:3rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
     .use-case{border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.5rem;background:var(--dark);display:flex;flex-direction:column;gap:.4rem;transition:border-color .2s}
     .use-case:hover{border-color:var(--red)}
     .use-case-title{font-weight:700;font-size:.95rem;color:var(--white)}
     .use-case-desc{font-size:.83rem;color:var(--muted)}
-
-    /* ── STEPS ── */
     .steps{margin-top:3rem;counter-reset:step;display:flex;flex-direction:column;gap:1px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
     .step{counter-increment:step;display:flex;align-items:flex-start;gap:1.5rem;padding:1.75rem 2rem;background:var(--card);transition:background .2s}
     .step+.step{border-top:1px solid var(--border)}
@@ -117,8 +97,6 @@
     .step-num::before{content:counter(step,decimal-leading-zero)}
     .step-content h3{font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:.35rem}
     .step-content p{font-size:.88rem;color:var(--muted);line-height:1.65}
-
-    /* ── FAQ ── */
     .faq-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:1px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
     details{background:var(--card);border:none}
     details+details{border-top:1px solid var(--border)}
@@ -129,8 +107,6 @@
     details[open] summary{background:#18181f}
     .faq-body{padding:0 1.75rem 1.5rem;font-size:.9rem;color:var(--muted);line-height:1.75}
     .faq-body strong{color:#c0c0cc}
-
-    /* ── TABLE ── */
     .compare-wrap{margin-top:3rem;overflow-x:auto;border-radius:8px;border:1px solid var(--border)}
     table{width:100%;border-collapse:collapse;font-size:.9rem}
     thead tr{background:#18181f}
@@ -142,13 +118,9 @@
     .cross{color:#ff4d4d}
     .highlight-row td{color:var(--white);font-weight:600}
     .highlight-row td:first-child{color:var(--red)}
-
-    /* ── FORM ── */
     .form-input{background:#0e0e12;border:1px solid #1f1f2a;border-radius:4px;padding:.85rem 1rem;color:var(--white);font-family:var(--font-body);font-size:1rem;width:100%;outline:none;transition:border-color .2s}
     .form-input:focus{border-color:var(--red)}
     .form-label{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;display:block}
-
-    /* ── FOOTER ── */
     footer{border-top:1px solid var(--border);padding:3rem 1.5rem;text-align:center}
     .footer-logo{font-family:var(--font-display);font-size:2rem;letter-spacing:.08em;color:var(--white);text-transform:uppercase;margin-bottom:.75rem}
     .footer-logo span{color:var(--red)}
@@ -157,25 +129,12 @@
     .footer-links a{font-size:.85rem;color:var(--muted);transition:color .2s}
     .footer-links a:hover{color:var(--white)}
     .footer-copy{font-size:.75rem;color:#44445a}
-
-    /* ── ANIMATIONS ── */
     @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-
-    /* ── MOBILE ── */
-    @media(max-width:600px){
-      .section{padding:3.5rem 1.25rem}
-      .step{flex-direction:column;gap:.5rem}
-      th,td{padding:.75rem 1rem}
-      .features-grid{grid-template-columns:1fr}
-      .use-cases{grid-template-columns:1fr}
-      summary{padding:1rem 1.25rem;font-size:.95rem}
-      .faq-body{padding:0 1.25rem 1.25rem}
-    }
+    @media(max-width:600px){.section{padding:3.5rem 1.25rem}.step{flex-direction:column;gap:.5rem}th,td{padding:.75rem 1rem}.features-grid{grid-template-columns:1fr}.use-cases{grid-template-columns:1fr}summary{padding:1rem 1.25rem;font-size:.95rem}.faq-body{padding:0 1.25rem 1.25rem}}
   </style>
 </head>
 <body>
 
-  <!-- ═══ NAVBAR ═══ -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="#" class="nav-logo" aria-label="Ca$hClowns home">
       <img src="logo.jpeg" alt="Ca$hClowns logo" />
@@ -183,6 +142,7 @@
     </a>
     <div class="nav-links">
       <a href="#how-it-works">How It Works</a>
+      <a href="blog/">Blog</a>
       <a href="#faq-heading">FAQ</a>
       <a href="https://www.youtube.com/@cashclownsai" rel="noopener noreferrer">YouTube</a>
       <a href="#download" class="nav-cta">⬇ Free Download</a>
@@ -192,16 +152,15 @@
     </button>
   </nav>
 
-  <!-- ═══ MOBILE DRAWER ═══ -->
   <div class="nav-drawer" id="drawer" role="menu">
     <a href="#how-it-works" role="menuitem">How It Works</a>
+    <a href="blog/" role="menuitem">Blog</a>
     <a href="#faq-heading" role="menuitem">FAQ</a>
     <a href="https://www.youtube.com/@cashclownsai" rel="noopener noreferrer" role="menuitem">YouTube</a>
     <a href="https://github.com/CashClowns/KeepAlive" rel="noopener noreferrer" role="menuitem">GitHub</a>
     <a href="#download" class="nav-cta" role="menuitem">⬇ Free Download</a>
   </div>
 
-  <!-- ═══ HERO ═══ -->
   <header class="hero" role="banner">
     <p class="hero-eyebrow">Free Mouse Jiggler App for Windows</p>
     <h1><span class="accent">Ca$h</span>Clowns<br />Mouse Jiggler</h1>
@@ -216,7 +175,6 @@
     </div>
   </header>
 
-  <!-- ═══ WHAT IS IT ═══ -->
   <section aria-labelledby="what-heading" class="section">
     <p class="section-label">What It Does</p>
     <h2 id="what-heading" class="section-title">The Best Mouse Jiggler App for Windows</h2>
@@ -226,7 +184,6 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ FEATURES ═══ -->
   <section aria-labelledby="features-heading" class="section">
     <p class="section-label">Features</p>
     <h2 id="features-heading" class="section-title">Why Ca$hClowns Beats Every Other Mouse Jiggler</h2>
@@ -242,7 +199,6 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ HOW IT WORKS ═══ -->
   <section aria-labelledby="how-heading" class="section" id="how-it-works">
     <p class="section-label">How It Works</p>
     <h2 id="how-heading" class="section-title">Get Running in 60 Seconds</h2>
@@ -256,7 +212,6 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ USE CASES ═══ -->
   <section aria-labelledby="uses-heading" class="section">
     <p class="section-label">Who Uses It</p>
     <h2 id="uses-heading" class="section-title">Built for Anyone Who Needs to Stay Active</h2>
@@ -273,7 +228,6 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ COMPARE ═══ -->
   <section aria-labelledby="compare-heading" class="section">
     <p class="section-label">Compare</p>
     <h2 id="compare-heading" class="section-title">Ca$hClowns vs Other Mouse Jigglers</h2>
@@ -296,7 +250,6 @@
 
   <div class="divider"></div>
 
-  <!-- ═══ FAQ ═══ -->
   <section aria-labelledby="faq-heading" class="section">
     <p class="section-label">FAQ</p>
     <h2 id="faq-heading" class="section-title">Mouse Jiggler Questions Answered</h2>
@@ -312,7 +265,6 @@
     </div>
   </section>
 
-  <!-- ═══ DOWNLOAD / FORM ═══ -->
   <section id="download" class="section" aria-labelledby="download-heading" style="padding-top:4rem;padding-bottom:6rem;">
     <div style="text-align:center;margin-bottom:3rem;">
       <p class="section-label" style="justify-content:center;display:flex;">Free Download</p>
@@ -354,13 +306,13 @@
     </script>
   </section>
 
-  <!-- ═══ FOOTER ═══ -->
   <footer role="contentinfo">
     <div class="footer-logo">Ca<span>$</span>hClowns</div>
     <p class="footer-tagline">Stay Green. Stay Paid.</p>
     <nav class="footer-links">
       <a href="#download">Download</a>
       <a href="#how-it-works">How It Works</a>
+      <a href="blog/">Blog</a>
       <a href="#faq-heading">FAQ</a>
       <a href="https://github.com/CashClowns/KeepAlive" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.youtube.com/@cashclownsai" rel="noopener noreferrer">YouTube</a>
@@ -368,7 +320,6 @@
     <p class="footer-copy">© 2026 Ca$hClowns · Free mouse jiggler app for Windows 10 &amp; 11</p>
   </footer>
 
-  <!-- ═══ BURGER SCRIPT ═══ -->
   <script>
     const burger=document.getElementById('burger');
     const drawer=document.getElementById('drawer');
