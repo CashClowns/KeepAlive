@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cashclowns.github.io/KeepAlive/sitemap.xml
