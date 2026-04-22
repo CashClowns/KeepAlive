@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TV5C8VFN0E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TV5C8VFN0E');
+
+  // Track button/link clicks as events
+  document.addEventListener('click', function(e) {
+    var target = e.target.closest('a, button');
+    if (target) {
+      gtag('event', 'click', {
+        event_category: target.tagName.toLowerCase(),
+        event_label: target.innerText || target.href || 'unknown'
+      });
+    }
+  });
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ca$hClowns – #1 Mouse Jiggler App | Keep PC Awake & Status Green</title>
