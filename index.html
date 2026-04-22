@@ -204,8 +204,8 @@
     <h2 id="how-heading" class="section-title">Get Running in 60 Seconds</h2>
     <p class="section-body">Ca$hClowns is the simplest mouse jiggler app on the market. No configuration wizards, no driver installs, no nonsense.</p>
     <ol class="steps">
-      <li class="step"><span class="step-num"></span><div class="step-content"><h3>Download Ca$hClowns</h3><p>Click the free download button. The mouse jiggler app downloads as a single Windows executable — no installer required.</p></div></li>
-      <li class="step"><span class="step-num"></span><div class="step-content"><h3>Run the App</h3><p>Double-click the file. Ca$hClowns launches instantly and begins keeping your mouse active. The clown mascot confirms it's running.</p></div></li>
+      <li class="step"><span class="step-num"></span><div class="step-content"><h3>Download Ca$hClowns</h3><p>Click the free download button. Choose the .exe for one-click launch, or download the full zip which includes both the .exe and .vbs launcher plus a plain-English setup guide.</p></div></li>
+      <li class="step"><span class="step-num"></span><div class="step-content"><h3>Enter Your License Key</h3><p>On first launch, paste in the license key you received on the download page. It saves automatically — you'll never need to enter it again.</p></div></li>
       <li class="step"><span class="step-num"></span><div class="step-content"><h3>Stay Green. Stay Paid.</h3><p>Your PC stays awake, your screen doesn't lock, your Teams and Slack status stays green. Go live your life.</p></div></li>
     </ol>
   </section>
@@ -260,7 +260,7 @@
       <details><summary>How do I stop my screen from locking automatically on Windows?</summary><div class="faq-body">Use a <strong>mouse jiggler app like Ca$hClowns</strong>. It moves the cursor slightly every few seconds, preventing the automatic lock screen or screensaver. No admin rights required.</div></details>
       <details><summary>Does the mouse jiggler app require internet access?</summary><div class="faq-body"><strong>No internet connection required.</strong> Ca$hClowns runs entirely locally. No data sent to any server, no cloud account needed, no license check. Works air-gapped or on restricted corporate networks.</div></details>
       <details><summary>Will Ca$hClowns work on Windows 11?</summary><div class="faq-body">Yes. Compatible with <strong>Windows 10 and Windows 11</strong> (32-bit and 64-bit). No additional runtimes or drivers needed.</div></details>
-      <details><summary>Is a mouse jiggler app detectable by IT monitoring software?</summary><div class="faq-body">Software mouse jigglers use the same Windows API your mouse driver uses, appearing as normal user input to most monitoring tools. Enterprise endpoint solutions with advanced behavioral analysis may detect patterns — use your judgment based on your organization's policies.</div></details>
+      <details><summary>Why does Windows show a SmartScreen warning?</summary><div class="faq-body">SmartScreen flags apps that aren't yet code-signed. Ca$hClowns is safe — click <strong>More info → Run anyway</strong> to proceed. Or download the full zip and use the .vbs launcher instead — no SmartScreen warning at all.</div></details>
       <details><summary>What makes Ca$hClowns different from other mouse jiggler software?</summary><div class="faq-body">Completely free, zero installation, no internet needed, zero telemetry, Windows 10/11 compatible. And it has an <strong>animated clown mascot</strong> — which no other mouse jiggler on the market can claim.</div></details>
     </div>
   </section>
@@ -269,8 +269,24 @@
     <div style="text-align:center;margin-bottom:3rem;">
       <p class="section-label" style="justify-content:center;display:flex;">Free Download</p>
       <h2 id="download-heading" class="section-title" style="text-align:center">Stop Babysitting<br />Your Mouse</h2>
-      <p class="section-body" style="margin:0 auto 2.5rem;text-align:center;">Drop your name and email below. We'll send your free download link instantly — no spam, no subscriptions, just the app.</p>
+      <p class="section-body" style="margin:0 auto 1.5rem;text-align:center;">Two versions available — pick what works for your machine. Your license key is included automatically.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:2.5rem;">
+        <div style="flex:1;min-width:220px;max-width:280px;border:1px solid var(--border);border-radius:8px;background:var(--card);padding:1.5rem;text-align:left;">
+          <div style="font-size:1.75rem;margin-bottom:.5rem;">🖥️</div>
+          <div style="font-family:var(--font-display);font-size:1.2rem;letter-spacing:.04em;color:var(--white);margin-bottom:.4rem;">ClownFlowAI.exe</div>
+          <div style="font-size:.8rem;color:var(--muted);margin-bottom:1rem;line-height:1.5;">One click and you're running. If Windows shows a warning, click <strong style="color:#c0c0cc">More info → Run anyway</strong>. Takes 10 seconds.</div>
+          <a href="https://github.com/CashClowns/KeepAlive/releases/latest/download/ClownFlowAI.exe" class="btn-primary" style="display:flex;align-items:center;gap:.4rem;justify-content:center;font-size:.85rem;padding:.65rem 1rem;text-decoration:none;">⬇ Download .exe</a>
+        </div>
+        <div style="flex:1;min-width:220px;max-width:280px;border:1px solid var(--border);border-radius:8px;background:var(--card);padding:1.5rem;text-align:left;">
+          <div style="font-size:1.75rem;margin-bottom:.5rem;">📦</div>
+          <div style="font-family:var(--font-display);font-size:1.2rem;letter-spacing:.04em;color:var(--white);margin-bottom:.4rem;">Full Package .zip</div>
+          <div style="font-size:.8rem;color:var(--muted);margin-bottom:1rem;line-height:1.5;">Everything in one zip. Extract and <strong style="color:#c0c0cc">double-click ClownFlowAI.exe</strong> or <strong style="color:#c0c0cc">ClownFlowAI.vbs</strong> to launch. Includes full setup guide.</div>
+          <a href="https://github.com/CashClowns/KeepAlive/releases/latest/download/ClownFlowAI-PS1.zip" class="btn-ghost" style="display:flex;align-items:center;gap:.4rem;justify-content:center;font-size:.85rem;padding:.65rem 1rem;text-decoration:none;">⬇ Download .zip</a>
+        </div>
+      </div>
     </div>
+
     <div id="form-wrap" style="max-width:480px;margin:0 auto;">
       <form id="download-form" action="https://formspree.io/f/maqlggoa" method="POST" style="display:flex;flex-direction:column;gap:1rem;">
         <input type="hidden" name="_subject" value="Ca$hClowns — New Download Request" />
@@ -282,16 +298,34 @@
           <label for="femail" class="form-label">Your Email</label>
           <input id="femail" type="email" name="email" placeholder="you@example.com" required class="form-input" />
         </div>
-        <button type="submit" class="btn-primary" style="font-size:1.05rem;padding:1rem 2rem;border:none;cursor:pointer;width:100%;justify-content:center;">⬇ Send Me the Free Download</button>
-        <p style="font-size:.75rem;color:var(--muted);text-align:center;">Windows 10 &amp; 11 · No install required · No spam — ever</p>
+        <button type="submit" class="btn-primary" style="font-size:1.05rem;padding:1rem 2rem;border:none;cursor:pointer;width:100%;justify-content:center;">⬇ Get My License Key + Download</button>
+        <p style="font-size:.75rem;color:var(--muted);text-align:center;">Windows 10 &amp; 11 · License key included · No spam — ever</p>
       </form>
       <div id="form-success" style="display:none;text-align:center;padding:2rem;border:1px solid #22c55e;border-radius:8px;background:#0a1a0e;">
         <img src="logo.jpeg" alt="Ca$hClowns" style="width:72px;height:72px;object-fit:contain;border-radius:8px;margin:0 auto 1rem;" />
-        <p style="font-weight:700;color:#22c55e;font-size:1.1rem;margin-bottom:.5rem;">You're in! Check your inbox.</p>
-        <p style="color:var(--muted);font-size:.9rem;">Your download link is on its way. Stay green. Stay paid.</p>
+        <p style="font-weight:700;color:#22c55e;font-size:1.1rem;margin-bottom:.75rem;">You're in! 🤡</p>
+        <p style="color:var(--muted);font-size:.88rem;margin-bottom:1rem;">Your license key is below. Save it — you'll need it when you first launch ClownFlowAI.</p>
+        <div style="background:#0d0d18;border:1px solid #22c55e;border-radius:6px;padding:.85rem 1.25rem;margin-bottom:1rem;">
+          <div style="font-size:.7rem;font-weight:700;letter-spacing:.15em;color:var(--muted);margin-bottom:.4rem;">YOUR LICENSE KEY</div>
+          <div id="license-key-display" style="font-family:monospace;font-size:1.1rem;font-weight:700;color:#22c55e;letter-spacing:.08em;"></div>
+        </div>
+        <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem;">
+          <a href="https://github.com/CashClowns/KeepAlive/releases/latest/download/ClownFlowAI.exe" class="btn-primary" style="font-size:.85rem;padding:.6rem 1.25rem;text-decoration:none;">⬇ Download .exe</a>
+          <a href="https://github.com/CashClowns/KeepAlive/releases/latest/download/ClownFlowAI-PS1.zip" class="btn-ghost" style="font-size:.85rem;padding:.6rem 1.25rem;text-decoration:none;">⬇ Download .zip</a>
+        </div>
+        <p style="color:#44445a;font-size:.78rem;">Check your email — a copy of your key is on its way too. Stay green. Stay paid.</p>
       </div>
     </div>
     <script>
+      const _keys=[
+        "CC-C073-BDCF-FCB2-4A7B","CC-ED7F-17A3-88B2-2CD5","CC-9CB2-CFB5-91EA-6F35",
+        "CC-A9D2-8A09-B48B-8059","CC-DF03-FCC9-8025-2105","CC-FF48-2B1B-5A46-B0CB",
+        "CC-B99A-1313-D86C-E4C2","CC-B9A4-A8A9-CE72-B3CB","CC-29AB-F254-604A-CA75",
+        "CC-4F64-FCB2-08AE-E4FF","CC-7B66-67B7-AE29-6846","CC-1237-4D05-01CB-A5A8",
+        "CC-FAB4-A160-A418-7DF1","CC-E9CE-69D5-9623-CC61","CC-F8FE-E7B0-27CB-F57A",
+        "CC-0938-00D6-F10C-D325","CC-DF1E-1C49-9A36-4178","CC-7209-D3FA-CB8F-9999",
+        "CC-CD63-10F9-B299-8E9F","CC-15E4-AD08-1871-6D96"
+      ];
       const form=document.getElementById('download-form');
       form.addEventListener('submit',async function(e){
         e.preventDefault();
@@ -299,8 +333,12 @@
         btn.textContent='Sending...';btn.disabled=true;
         try{
           const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-          if(res.ok){form.style.display='none';document.getElementById('form-success').style.display='block';}
-          else{btn.textContent='⚠ Something went wrong — try again';btn.disabled=false;}
+          if(res.ok){
+            const key=_keys[Math.floor(Math.random()*_keys.length)];
+            document.getElementById('license-key-display').textContent=key;
+            form.style.display='none';
+            document.getElementById('form-success').style.display='block';
+          } else{btn.textContent='⚠ Something went wrong — try again';btn.disabled=false;}
         }catch{btn.textContent='⚠ Network error — try again';btn.disabled=false;}
       });
     </script>
