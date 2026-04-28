@@ -12,7 +12,7 @@
   document.addEventListener('click', function(e) {
     var target = e.target.closest('a, button');
     if (target) {
-      gtag('event', 'click', {
+      gtag('event', 'click', {h
         event_category: target.tagName.toLowerCase(),
         event_label: target.innerText || target.href || 'unknown'
       });
@@ -351,7 +351,7 @@
     </div>
   </section>
 
-  <footer role="contentinfo">
+  <section id="ad-section" style="background:#050905;padding:60px 20px;text-align:center;"><p style="color:#fff;font-size:13px;letter-spacing:3px;text-transform:uppercase;opacity:.4;margin-bottom:20px;">See It In Action</p><iframe src="ad.html" width="540" height="580" style="border:none;border-radius:20px;max-width:100%;" loading="lazy" title="Ca$hClowns animated ad"></iframe></section>
     <div class="footer-logo">Ca<span>$</span>hClowns</div>
     <p class="footer-tagline">Stay Green. Stay Paid.</p>
     <nav class="footer-links">
